@@ -6,7 +6,7 @@ ifndef HAVOC_BUILD_TYPE
 endif
 
 # Only include Havoc OTA for official builds
-ifeq ($(filter-out Official,$(HAVOC_BUILD_TYPE)),)
+ifeq ($(filter-out Lite,$(HAVOC_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
         Updates
 endif

@@ -40,6 +40,9 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
 
+# ADB authentication
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \

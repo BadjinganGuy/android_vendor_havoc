@@ -277,9 +277,9 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/havoc/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
-# Exchange support
-PRODUCT_PACKAGES += \
-    Exchange2
+# Google Assistant
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.opa.eligible_device=true
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
